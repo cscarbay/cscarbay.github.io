@@ -1,0 +1,60 @@
+/*
+Theme Name: CScarbay 2025
+Author: Carlos Scarbay
+Author URL: https://cscarbay.github.io
+Version: 5.0
+*/
+/*****************************************************
+Documento CSS
+*****************************************************/
+/*****************************************************
+0. General
+1. Menu Bar
+2. Footer
+3. Slider-Banners
+4. About
+5. Projects
+6. Services
+7. Testimonials
+8. Customers
+9. Budgets
+10. Page - Resume CV
+11. Page - Single
+12. Page - Only Text
+13. Page - Forms
+14. Contact Form 7
+15. Drag and Drop Multiple File Upload for Contact Form 7
+16. Country & Phone Field Contact Form 7
+17. Page - 404
+18. Page - link in Bio
+19. Page - Maintenance
+20. Responsive Media Queries
+*****************************************************/
+
+/*****************************************************
+0. General
+*****************************************************/
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+    line-height: 1.2;
+}
+body {
+    font-family: 'Neue Haas Grotesk Display Pro';
+	font-size: 1.125rem;
+	font-weight: 500;
+	font-kerning: auto;
+	color: #ffffff !important;
+	background: #0b0d0d !important;
+}
+::selection {
+	background: #ff2600 !important;
+	color: #ffffff !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+    line-height: 1.2;
+}
+h1 {
+    font-size: 12rem;
+}
