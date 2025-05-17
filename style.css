@@ -51,10 +51,443 @@ body {
 	background: #ff2600 !important;
 	color: #ffffff !important;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 900;
-    line-height: 1.2;
+.cs-main-title {
+	font-weight: 600;
+	font-size: clamp(3rem, 2.1103rem + 4.4486vw, 6rem);
+	color: #ff2600;
+	margin-bottom: clamp(3rem, 2.1103rem + 4.4486vw, 6rem);
 }
-h1 {
-    font-size: 12rem;
+.cs-home-section, .cs-full-page {
+	padding: clamp(3rem, 2.1103rem + 4.4486vw, 6rem) 0;
+}
+.cs-cta-btn {
+	font-weight: 600;
+	font-size: clamp(1.25rem, 1.0276rem + 1.1121vw, 2rem);
+	line-height: 1;
+	text-decoration: none;
+	color: #ffffff;
+	background: transparent;
+	border: .25rem solid #ff2600;
+	padding: 0.5rem 1rem;
+	border-radius:  2.5rem;
+	transition: all .3s ease;
+}
+.cs-cta-btn::after {
+    content: "\f0a9";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+	margin-left: .5rem;
+}
+.cs-cta-btn:hover, .cs-cta-btn:focus, .cs-cta-btn:active {
+	background: #ff2600;
+}
+/*****************************************************
+1. Menu Bar
+*****************************************************/
+.navbar {
+	padding: .625rem 0;
+}
+.navbar-primary {
+	background: transparent;
+	transition: all 0.5s ease;
+}
+.navbar-primary-scrollchange {
+	background: #0b0d0d;
+}
+.navbar-brand {
+	padding: 0;
+	margin: 0;
+}
+.navbar-brand img {
+	height: 3rem;
+}
+.nav-container {
+    width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+.nav-item {
+	margin: 0 1.25rem 0 0;
+}
+.nav-item:last-child {
+	margin-right: 0;
+}
+.nav-link {
+	font-weight: 600;
+	font-size: 1.5rem;
+	color: #ffffff;
+	padding: 0 !important;
+	transition: all .3s ease;
+}
+.nav-link:hover, .nav-link:focus, .nav-link:active {
+	color: #ff2600;
+}
+.navbar-toggler {
+	height: 2.5rem;
+	width: 2.5rem;
+	border: none;
+	padding: 0;
+	transition: none;
+}
+.navbar-toggler:hover, .navbar-toggler:focus, .navbar-toggler:active {
+	box-shadow: none;
+}
+.cs-toggler-icon {
+	display: inline-block;
+	height: 2.5rem;
+	width: 2.5rem;
+	border: none;
+	padding: 0;
+	transition: none;
+}
+.navbar-toggler.collapsed .cs-toggler-icon::before, .navbar-toggler .cs-toggler-icon::before {
+	display: inline-block;
+	height: 2.5rem;
+	width: 2.5rem;
+	font-family: 'Font Awesome 6 free';
+	font-weight: 900;
+	content: '\f7a4';
+	font-size: 2.5rem;
+	color: #ff2600;
+	background-image: none !important;
+	transition: all .3s ease;
+}
+.navbar-toggler .cs-toggler-icon::before {
+	content: '\f00d';
+	color: #98b3b3;
+}
+.navbar-secondary {
+	background: #0b0d0d;
+}
+/*****************************************************
+2. Footer
+*****************************************************/
+.cs-contact-bar {
+	padding: 6rem 0;
+	border-top: .125rem  solid #ff2600;
+}
+.cs-contact-icon {
+	width: clamp(2.625rem, -2.6212rem + 6vw, 3rem);
+	font-size: clamp(2.625rem, -2.6212rem + 6vw, 3rem);
+	color: #ff2600;
+	text-align: center;
+	margin-right: clamp(0.25rem, 0.1017rem + 0.7414vw, 0.75rem);
+}
+.cs-contact a {
+	font-weight: 600;
+	font-size: clamp(2.625rem, -2.6212rem + 6vw, 3rem);
+	text-decoration: none;
+	color: #ffffff;
+	transition: all .3s ease;
+}
+.cs-contact a:hover, .cs-contact a:focus, .cs-contact a:active {
+	text-decoration: underline;
+	color: #98b3b3;
+}
+.cs-social-bar {
+	padding: 6rem 0;
+	border-top: .125rem  solid #ffffff;
+}
+.cs-tagline-container {
+    order: 1;
+}
+.cs-tagline {
+	width: clamp(12rem, 9.6274rem + 11.8628vw, 20rem);
+}
+.cs-social {
+    order: 2;
+}
+.cs-social-title {
+	font-weight: 600;
+	font-size: clamp(1.5rem, 1.3517rem + 0.7414vw, 2rem);
+	color: #ffffff;
+	margin-bottom: clamp(1rem, 0.8517rem + 0.7414vw, 1.5rem);
+}
+.cs-social-link {
+	font-size: clamp(2rem, 1.4069rem + 2.9657vw, 4rem);
+	margin-right: clamp(1rem, 0.7034rem + 1.4829vw, 2rem);
+    line-height: 1;
+    float: left;
+}
+.cs-social-link:last-child {
+	margin-right: 0;
+}
+.cs-social-icon {
+	color: #ff2600;
+	margin: 0;
+	transition: all .3s ease;
+}
+.cs-social-icon:hover, .cs-social-icon:focus, .cs-social-icon:active {
+	color: #98b3b3;
+}
+.cs-footer-bar {
+	padding: 1.5rem 0;
+	border-top: .125rem  solid #ffffff;
+}
+.cs-copyright {
+	font-weight: 500;
+	font-size: .75rem;
+    line-height: 1;
+	color: #ffffff;
+	margin: 0;
+}
+.cs-copyright span {
+	font-weight: 900;
+	color: #ff2600;
+}
+.cs-terms-pol-links a {
+	font-weight: 500;
+	font-size: .75rem;
+    line-height: 1;
+	text-decoration: none;
+	color: #98b3b3;
+	margin-right: 2rem;
+	transition: all .3s ease;
+    float: left;
+}
+.cs-terms-pol-links a:last-child {
+	margin-right: 0;
+}
+.cs-terms-pol-links a:hover, .cs-terms-pol-links a:focus, .cs-terms-pol-links a:active {
+	text-decoration: underline;
+	color:#ff2600;
+}
+/*****************************************************
+3. Slider-Banners
+*****************************************************/
+.cs-slider-banners {
+	padding: 0;
+}
+.cs-slider-banners .carousel-item {
+	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+}
+.cs-slider-banner::before {
+	position: absolute;
+	display: block;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: rgba(11,13,13,.25);
+	mix-blend-mode: color;
+}
+.cs-slider-banner-text {
+	position: relative;
+	font-weight:900;
+	font-size: clamp(4rem, 0.4411rem + 17.7943vw, 16rem);
+	color: #ff2600;
+	margin: 0;
+	text-shadow: 0 0 3rem rgba(11,13,13,.33);
+}
+/*****************************************************
+4. About
+*****************************************************/
+.cs-about-row {
+	margin-bottom: 4rem;
+}
+.cs-about-text-container {
+	order: 1;
+}
+.cs-about-text p {
+    font-size: clamp(1.75rem, 1.3793rem + 1.8536vw, 3rem);
+    line-height: 1;
+	margin:  0 0 clamp(1.5rem, 1.0551rem + 2.2243vw, 3rem);
+}
+.cs-about-text b {
+	font-weight: 600;
+}
+.cs-about-text span {
+	font-weight: 900;
+	color: #ff2600;
+}
+.cs-about-img-box {
+    order: 2;
+}
+.cs-about-img {
+	width: 100%;
+	border-radius: 50%;
+}
+.cs-milestone-title {
+	font-weight: 600;
+	font-size: clamp(0.75rem, 0.6017rem + 0.7414vw, 1.25rem);
+	color: #ff2600;
+	margin: 0;
+}
+.cs-milestone-text {
+	font-weight: 900;
+	font-size: clamp(2.5rem, 1.462rem + 5.19vw, 6rem);
+    line-height: 1;
+	color: #ffffff;
+	margin: 0;
+}
+/*****************************************************
+20. Responsive Media Queries
+*****************************************************/
+@media screen and (max-width: 1399px) {
+/* 0. General */
+/* 1. Menu Bar */
+/* 2. Footer */
+.cs-contact-icon {
+    width: clamp(2.125rem, -0.8725rem + 4vw, 2.625rem);
+	font-size: clamp(2.125rem, -0.8725rem + 4vw, 2.625rem);
+}
+.cs-contact a {
+	font-size: clamp(2.125rem, -0.8725rem + 4vw, 2.625rem);
+}
+/* 3. Slider-Banners */
+/* 4. About */
+/* 5. Projects */
+/* 6. Services */
+/* 7. Testimonials */
+/* 8. Customers */
+/* 9. Budgets */
+/* 10. Page - Resume CV */
+/* 11. Page - Single */
+/* 12. Page - Only Text */
+/* 13. Page - Forms */
+/* 14. Contact Form 7 */
+/* 15. Drag and Drop Multiple File Upload for Contact Form 7 */
+/* 16. Country & Phone Field Contact Form 7 */
+/* 17. Page - 404 */
+/* 18. Page - link in Bio */
+/* 19. Page - Maintenance */
+}
+@media screen and (max-width: 1199px) {
+/* 0. General */
+/* 1. Menu Bar */
+/* 2. Footer */
+.cs-contact-bar, .cs-social-bar {
+	padding: clamp(2rem, 1.0462rem + 4.769vw, 4rem) 0;
+}
+.cs-contact-icon {
+    width: clamp(1.375rem, 1.102rem + 1.3652vw, 2.125rem);
+	font-size: clamp(1.375rem, 1.102rem + 1.3652vw, 2.125rem);
+}
+.cs-contact a {
+	font-size: clamp(1.375rem, 1.102rem + 1.3652vw, 2.125rem);
+}
+/* 3. Slider-Banners */
+/* 4. About */
+/* 5. Projects */
+/* 6. Services */
+/* 7. Testimonials */
+/* 8. Customers */
+/* 9. Budgets */
+/* 10. Page - Resume CV */
+/* 11. Page - Single */
+/* 12. Page - Only Text */
+/* 13. Page - Forms */
+/* 14. Contact Form 7 */
+/* 15. Drag and Drop Multiple File Upload for Contact Form 7 */
+/* 16. Country & Phone Field Contact Form 7 */
+/* 17. Page - 404 */
+/* 18. Page - link in Bio */
+/* 19. Page - Maintenance */
+}
+@media screen and (max-width: 991px) {
+/* 0. General */
+/* 1. Menu Bar */
+.nav-item {
+	margin: .5rem 0 0;
+}
+.nav-link {
+	text-align: end;
+}
+/* 2. Footer */
+.cs-contact-title-container {
+    margin-bottom: clamp(1rem, 0.5231rem + 2.3845vw, 2rem);
+}
+.cs-tagline-container {
+    order: 2;
+}
+.cs-social {
+    order: 1;
+    margin-bottom: 3rem;
+}
+.cs-copyright-container {
+	margin-bottom: .5rem;
+}
+.cs-copyright, .cs-terms-pol-links a {
+	font-size: clamp(0.5625rem, 0.4731rem + 0.4471vw, 0.75rem);
+}
+/* 3. Slider-Banners */
+/* 4. About */
+.cs-about-text-container {
+	order: 2;
+}
+.cs-about-img-box {
+    order: 1;
+	width: 50%;
+	margin: 0 0 2rem;
+}
+.cs-milestone-row .col-6:nth-of-type(1),
+.cs-milestone-row .col-6:nth-of-type(2) {
+    margin-bottom: .75rem;
+}
+/* 5. Projects */
+/* 6. Services */
+/* 7. Testimonials */
+/* 8. Customers */
+/* 9. Budgets */
+/* 10. Page - Resume CV */
+/* 11. Page - Single */
+/* 12. Page - Only Text */
+/* 13. Page - Forms */
+/* 14. Contact Form 7 */
+/* 15. Drag and Drop Multiple File Upload for Contact Form 7 */
+/* 16. Country & Phone Field Contact Form 7 */
+/* 17. Page - 404 */
+/* 18. Page - link in Bio */
+/* 19. Page - Maintenance */
+}
+@media screen and (max-width: 767px) {
+/* 0. General */
+/* 1. Menu Bar */
+/* 2. Footer */
+/* 3. Slider-Banners */
+/* 4. About */
+.cs-about-img-box {
+	width: 66%;
+}
+/* 5. Projects */
+/* 6. Services */
+/* 7. Testimonials */
+/* 8. Customers */
+/* 9. Budgets */
+/* 10. Page - Resume CV */
+/* 11. Page - Single */
+/* 12. Page - Only Text */
+/* 13. Page - Forms */
+/* 14. Contact Form 7 */
+/* 15. Drag and Drop Multiple File Upload for Contact Form 7 */
+/* 16. Country & Phone Field Contact Form 7 */
+/* 17. Page - 404 */
+/* 18. Page - link in Bio */
+/* 19. Page - Maintenance */
+}
+@media screen and (max-width: 575px) {
+/* 0. General */
+/* 1. Menu Bar */
+/* 2. Footer */
+/* 3. Slider-Banners */
+/* 4. About */
+.cs-about-img-box {
+	width: 80%;
+}
+/* 5. Projects */
+/* 6. Services */
+/* 7. Testimonials */
+/* 8. Customers */
+/* 9. Budgets */
+/* 10. Page - Resume CV */
+/* 11. Page - Single */
+/* 12. Page - Only Text */
+/* 13. Page - Forms */
+/* 14. Contact Form 7 */
+/* 15. Drag and Drop Multiple File Upload for Contact Form 7 */
+/* 16. Country & Phone Field Contact Form 7 */
+/* 17. Page - 404 */
+/* 18. Page - link in Bio */
+/* 19. Page - Maintenance */
 }
