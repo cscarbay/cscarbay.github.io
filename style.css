@@ -55,10 +55,10 @@ body {
 	font-weight: 600;
 	font-size: clamp(3rem, 2.1103rem + 4.4486vw, 6rem);
 	color: #ff2600;
-	margin-bottom: clamp(3rem, 2.1103rem + 4.4486vw, 6rem);
+	margin-bottom: clamp(2rem, 0.8137rem + 5.9314vw, 6rem);
 }
 .cs-home-section, .cs-full-page {
-	padding: clamp(3rem, 2.1103rem + 4.4486vw, 6rem) 0;
+	padding: clamp(4rem, 3.4069rem + 2.9657vw, 6rem) 0;
 }
 .cs-cta-btn {
 	font-weight: 600;
