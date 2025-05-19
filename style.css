@@ -322,6 +322,156 @@ body {
 	margin: 0;
 }
 /*****************************************************
+5. Projects
+*****************************************************/
+.cs-project-item {
+	margin-bottom: 1.5rem;
+}
+.destacado {
+	width: 66.6666666666%;
+}
+.cs-project-container {
+	position: relative;
+	padding: 0;
+}
+.cs-project-thumb img {
+	width: 100%;
+	height: 416px;
+	object-fit: cover;
+	border-radius: 1rem;
+}
+.cs-thumb-overlay::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 1rem;
+	background: #ff2600;
+	top: 0;
+	opacity: 0;
+	transition: all .3s ease;
+}
+.cs-thumb-overlay:hover::before {
+	opacity: 1;
+}
+.cs-thumb-text {
+	position: absolute;
+    bottom: 0;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	align-content: center;
+	padding: 1.5rem;
+	opacity: 0;
+	transition: all .3s ease;
+}
+.cs-thumb-text:hover {
+	opacity: 1;
+}
+.cs-thumb-text-container {
+	position: relative;
+}
+.cs-thumb-title {
+	font-weight: 900;
+	font-size: 3rem;
+	line-height: 1;
+	color: #ffffff;
+	margin: 0;
+	padding-bottom: .5rem;
+}
+.cs-category-container {
+	width: fit-content;
+}
+.cs-thumb-category {
+	font-weight: 400;
+	font-size: 1.5rem;
+	color: #ffffff;
+	background: transparent;
+	border: .125rem solid #ffffff;
+	padding: .25rem .75rem;
+	border-radius: 2rem;
+	margin: 0 .5rem 0 0;
+}
+.cs-thumb-category:last-child {
+	margin: 0;
+}
+/*****************************************************
+6. Services
+*****************************************************/
+.accordion {
+	--bs-accordion-border-color: none;
+	--bs-accordion-bg: none;
+}
+.cs-service-item {
+	border-bottom: .125rem solid #ffffff !important;
+	margin-bottom: 2rem;
+}
+.cs-service-item:last-child {
+	margin-bottom: 0;
+}
+.accordion-button {
+	padding: 0 0 .5rem;
+}
+.accordion-button::after {
+	width: auto;
+	height: auto;
+	font-family: 'Font Awesome 6 free';
+	font-weight: 900;
+	font-size: clamp(1rem, 0.7034rem + 1.4829vw, 2rem);
+	content: '\f077';
+	color: #ff2600;
+	background-image: none !important;
+}
+.accordion-button:not(.collapsed) {
+	background: none !important;
+}
+.accordion-button:focus {
+	box-shadow: none;
+}
+.cs-service-title {
+	font-weight: 700;
+	font-size: clamp(1.5rem, 0.1654rem + 6.6728vw, 6rem);
+	line-height: 1;
+	color: #98b3b3;
+	margin: 0;
+}
+.accordion-body {
+	padding: 2rem 0;
+}
+.cs-service-main-text p {
+	font-weight: 600;
+	font-size: clamp(1.125rem, 0.7172rem + 2.0389vw, 2.5rem);
+	line-height: 1;
+	color: #ffffff;
+	margin: 0;
+}
+.cs-include-row {
+	margin-top: 2rem;
+}
+.cs-include-text {
+	font-weight: 600;
+	font-size: clamp(1rem, 0.7034rem + 1.4829vw, 2rem);
+	line-height: 1;
+	color: #98b3b3;
+	margin: 0;
+}
+.cs-includes-items-row {
+	margin-top: 1rem;
+}
+.cs-include-title {
+	font-weight: 600;
+	font-size: clamp(1rem, 0.7034rem + 1.4829vw, 2rem);
+	line-height: 1;
+	color: #ff2600;
+	margin: 0 0 .5rem;
+}
+.cs-include-description  {
+	font-size: clamp(1rem, 0.7776rem + 1.1121vw, 1.75rem);
+	line-height: 1;
+	color: #ffffff;
+	margin: 0;
+}
+/*****************************************************
 20. Responsive Media Queries
 *****************************************************/
 @media screen and (max-width: 1399px) {
@@ -338,6 +488,15 @@ body {
 /* 3. Slider-Banners */
 /* 4. About */
 /* 5. Projects */
+.cs-project-thumb img {
+	height: 356px;
+}
+.cs-thumb-title {
+	font-size: 2.75rem;
+}
+.cs-thumb-category {
+	font-size: 1.375rem;
+}
 /* 6. Services */
 /* 7. Testimonials */
 /* 8. Customers */
@@ -370,6 +529,15 @@ body {
 /* 3. Slider-Banners */
 /* 4. About */
 /* 5. Projects */
+.cs-project-thumb img {
+	height: 296px;
+}
+.cs-thumb-title {
+	font-size: 2.0625rem;
+}
+.cs-thumb-category {
+	font-size: 1.0625rem;
+}
 /* 6. Services */
 /* 7. Testimonials */
 /* 8. Customers */
@@ -426,6 +594,18 @@ body {
     margin-bottom: .75rem;
 }
 /* 5. Projects */
+.destacado {
+	width: 100%;
+}
+.cs-project-thumb img {
+	height: 336px;
+}
+.cs-thumb-title {
+	font-size: 2.25rem;
+}
+.cs-thumb-category {
+	font-size: 1.125rem;
+}
 /* 6. Services */
 /* 7. Testimonials */
 /* 8. Customers */
@@ -451,6 +631,15 @@ body {
 	width: 66%;
 }
 /* 5. Projects */
+.cs-project-thumb img {
+	height: 246px;
+}
+.cs-thumb-title {
+	font-size: 1.625rem;
+}
+.cs-thumb-category {
+	font-size: 1rem;
+}
 /* 6. Services */
 /* 7. Testimonials */
 /* 8. Customers */
@@ -476,6 +665,12 @@ body {
 	width: 80%;
 }
 /* 5. Projects */
+.cs-project-thumb img {
+	height: 296px;
+}
+.cs-thumb-title {
+	font-size: 2rem;
+}
 /* 6. Services */
 /* 7. Testimonials */
 /* 8. Customers */
