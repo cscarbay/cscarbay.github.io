@@ -4,10 +4,10 @@ Author: Carlos Scarbay
 Author URL: https://cscarbay.github.io
 Version: 5.0
 */
-/*****************************************************
+/********************************************************
 Documento CSS
-*****************************************************/
-/*****************************************************
+********************************************************/
+/********************************************************
 0. General
 1. Menu Bar
 2. Footer
@@ -29,20 +29,19 @@ Documento CSS
 18. Page - link in Bio
 19. Page - Maintenance
 20. Responsive Media Queries
-*****************************************************/
-
-/*****************************************************
+********************************************************/
+/********************************************************
 0. General
-*****************************************************/
+********************************************************/
 html {
 	scroll-behavior: smooth;
 	overflow-x: hidden;
-    line-height: 1.2;
 }
 body {
     font-family: 'Neue Haas Grotesk Display Pro';
 	font-size: 1.125rem;
 	font-weight: 500;
+    line-height: 1.2;
 	font-kerning: auto;
 	color: #ffffff !important;
 	background: #0b0d0d !important;
@@ -53,17 +52,16 @@ body {
 }
 .cs-main-title {
 	font-weight: 600;
-	font-size: clamp(3rem, 2.1103rem + 4.4486vw, 6rem);
+	font-size: 6rem;
 	color: #ff2600;
-	margin-bottom: clamp(2rem, 0.8137rem + 5.9314vw, 6rem);
+	margin-bottom: 6rem;
 }
 .cs-home-section, .cs-full-page {
-	padding: clamp(4rem, 3.4069rem + 2.9657vw, 6rem) 0;
+	padding: 6rem 0;
 }
 .cs-cta-btn {
-	font-weight: 600;
-	font-size: clamp(1.25rem, 1.0276rem + 1.1121vw, 2rem);
-	line-height: 1;
+	font-weight: 700;
+	font-size: 2rem;
 	text-decoration: none;
 	color: #ffffff;
 	background: transparent;
@@ -81,9 +79,9 @@ body {
 .cs-cta-btn:hover, .cs-cta-btn:focus, .cs-cta-btn:active {
 	background: #ff2600;
 }
-/*****************************************************
+/********************************************************
 1. Menu Bar
-*****************************************************/
+********************************************************/
 .navbar {
 	padding: .625rem 0;
 }
@@ -159,23 +157,31 @@ body {
 .navbar-secondary {
 	background: #0b0d0d;
 }
-/*****************************************************
+/********************************************************
 2. Footer
-*****************************************************/
+********************************************************/
 .cs-contact-bar {
 	padding: 6rem 0;
-	border-top: .125rem  solid #ff2600;
+	border-top: .125rem solid #ff2600;
+}
+.cs-contact-title-container .cs-main-title {
+	margin-bottom: 0;
+}
+.cs-contact {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+.cs-contact:last-of-type {
+	margin-bottom: 0;
 }
 .cs-contact-icon {
-	width: clamp(2.625rem, -2.6212rem + 6vw, 3rem);
-	font-size: clamp(2.625rem, -2.6212rem + 6vw, 3rem);
+	width: 3rem;
 	color: #ff2600;
 	text-align: center;
-	margin-right: clamp(0.25rem, 0.1017rem + 0.7414vw, 0.75rem);
+	margin-right: .75rem;
 }
 .cs-contact a {
 	font-weight: 600;
-	font-size: clamp(2.625rem, -2.6212rem + 6vw, 3rem);
 	text-decoration: none;
 	color: #ffffff;
 	transition: all .3s ease;
@@ -186,27 +192,26 @@ body {
 }
 .cs-social-bar {
 	padding: 6rem 0;
-	border-top: .125rem  solid #ffffff;
+	border-top: .125rem solid #ffffff;
 }
 .cs-tagline-container {
     order: 1;
 }
 .cs-tagline {
-	width: clamp(12rem, 9.6274rem + 11.8628vw, 20rem);
+	width: 20rem;
 }
 .cs-social {
     order: 2;
 }
 .cs-social-title {
 	font-weight: 600;
-	font-size: clamp(1.5rem, 1.3517rem + 0.7414vw, 2rem);
+	font-size: 2rem;
 	color: #ffffff;
-	margin-bottom: clamp(1rem, 0.8517rem + 0.7414vw, 1.5rem);
+	margin-bottom: 1.5rem;
 }
 .cs-social-link {
-	font-size: clamp(2rem, 1.4069rem + 2.9657vw, 4rem);
-	margin-right: clamp(1rem, 0.7034rem + 1.4829vw, 2rem);
-    line-height: 1;
+	font-size: 4rem;
+	margin-right: 2rem;
     float: left;
 }
 .cs-social-link:last-child {
@@ -222,12 +227,11 @@ body {
 }
 .cs-footer-bar {
 	padding: 1.5rem 0;
-	border-top: .125rem  solid #ffffff;
+	border-top: .125rem solid #ffffff;
 }
 .cs-copyright {
 	font-weight: 500;
 	font-size: .75rem;
-    line-height: 1;
 	color: #ffffff;
 	margin: 0;
 }
@@ -238,7 +242,6 @@ body {
 .cs-terms-pol-links a {
 	font-weight: 500;
 	font-size: .75rem;
-    line-height: 1;
 	text-decoration: none;
 	color: #98b3b3;
 	margin-right: 2rem;
@@ -252,9 +255,9 @@ body {
 	text-decoration: underline;
 	color:#ff2600;
 }
-/*****************************************************
+/********************************************************
 3. Slider-Banners
-*****************************************************/
+********************************************************/
 .cs-slider-banners {
 	padding: 0;
 }
@@ -275,14 +278,15 @@ body {
 .cs-slider-banner-text {
 	position: relative;
 	font-weight:900;
-	font-size: clamp(4rem, 0.4411rem + 17.7943vw, 16rem);
+	font-size: 16rem;
+	text-align: center;
 	color: #ff2600;
 	margin: 0;
 	text-shadow: 0 0 3rem rgba(11,13,13,.33);
 }
-/*****************************************************
+/********************************************************
 4. About
-*****************************************************/
+********************************************************/
 .cs-about-row {
 	margin-bottom: 4rem;
 }
@@ -290,9 +294,8 @@ body {
 	order: 1;
 }
 .cs-about-text p {
-    font-size: clamp(1.75rem, 1.3793rem + 1.8536vw, 3rem);
-    line-height: 1;
-	margin:  0 0 clamp(1.5rem, 1.0551rem + 2.2243vw, 3rem);
+    font-size: 3rem;
+	margin:  0 0 3rem;
 }
 .cs-about-text b {
 	font-weight: 600;
@@ -310,20 +313,19 @@ body {
 }
 .cs-milestone-title {
 	font-weight: 600;
-	font-size: clamp(0.75rem, 0.6017rem + 0.7414vw, 1.25rem);
+	font-size: 1.5rem;
 	color: #ff2600;
 	margin: 0;
 }
 .cs-milestone-text {
 	font-weight: 900;
-	font-size: clamp(2.5rem, 1.462rem + 5.19vw, 6rem);
-    line-height: 1;
+	font-size: 6rem;
 	color: #ffffff;
 	margin: 0;
 }
-/*****************************************************
+/********************************************************
 5. Projects
-*****************************************************/
+********************************************************/
 .cs-project-item {
 	margin-bottom: 1.5rem;
 }
@@ -374,7 +376,6 @@ body {
 .cs-thumb-title {
 	font-weight: 900;
 	font-size: 3rem;
-	line-height: 1;
 	color: #ffffff;
 	margin: 0;
 	padding-bottom: .5rem;
@@ -395,15 +396,15 @@ body {
 .cs-thumb-category:last-child {
 	margin: 0;
 }
-/*****************************************************
+/********************************************************
 6. Services
-*****************************************************/
+********************************************************/
 .accordion {
 	--bs-accordion-border-color: none;
 	--bs-accordion-bg: none;
 }
 .cs-service-item {
-	border-bottom: .125rem solid #ffffff !important;
+	border-bottom: .25rem solid #ffffff !important;
 	margin-bottom: 2rem;
 }
 .cs-service-item:last-child {
@@ -417,7 +418,7 @@ body {
 	height: auto;
 	font-family: 'Font Awesome 6 free';
 	font-weight: 900;
-	font-size: clamp(1rem, 0.7034rem + 1.4829vw, 2rem);
+	font-size: 2rem;
 	content: '\f077';
 	color: #ff2600;
 	background-image: none !important;
@@ -430,8 +431,7 @@ body {
 }
 .cs-service-title {
 	font-weight: 700;
-	font-size: clamp(1.5rem, 0.1654rem + 6.6728vw, 6rem);
-	line-height: 1;
+	font-size: 6rem;
 	color: #98b3b3;
 	margin: 0;
 }
@@ -440,8 +440,7 @@ body {
 }
 .cs-service-main-text p {
 	font-weight: 600;
-	font-size: clamp(1.125rem, 0.7172rem + 2.0389vw, 2.5rem);
-	line-height: 1;
+	font-size: 2.5rem;
 	color: #ffffff;
 	margin: 0;
 }
@@ -450,8 +449,7 @@ body {
 }
 .cs-include-text {
 	font-weight: 600;
-	font-size: clamp(1rem, 0.7034rem + 1.4829vw, 2rem);
-	line-height: 1;
+	font-size: 2rem;
 	color: #98b3b3;
 	margin: 0;
 }
@@ -460,43 +458,131 @@ body {
 }
 .cs-include-title {
 	font-weight: 600;
-	font-size: clamp(1rem, 0.7034rem + 1.4829vw, 2rem);
-	line-height: 1;
+	font-size: 2rem;
 	color: #ff2600;
 	margin: 0 0 .5rem;
 }
 .cs-include-description  {
-	font-size: clamp(1rem, 0.7776rem + 1.1121vw, 1.75rem);
-	line-height: 1;
+	font-size: 1.75rem;
 	color: #ffffff;
 	margin: 0;
 }
-/*****************************************************
+/********************************************************
+7. Testimonials
+********************************************************/
+.cs-testimonial-text {
+	background-image: url(assets/images/quotes-left.svg), url(assets/images/quotes-right.svg);
+	background-repeat: no-repeat;
+	background-size: 6rem;
+	background-position: top left 0, bottom right 0;
+	margin-bottom: 2rem;
+}
+.cs-testimonial-text p {
+	font-weight: 600;
+	font-size: 3rem;
+	margin: 0;
+}
+.cs-customer-img {
+	width: 5.5rem;
+	border-radius: 50%;
+	border: .25rem solid #ffffff;
+	background-color: #ffffff;
+	margin-right: 1.5rem;
+}
+.cs-customer-user {
+	font-weight: 700;
+	font-size: 1.5rem;
+	margin: 0 0 .25rem;
+}
+.cs-customer-business {
+	font-size: 1rem;
+	margin: 0;
+}
+.carousel-control-prev, .carousel-control-next {
+	width: 5.5rem;
+	opacity: .5;
+	transition: all .3s ease;
+}
+.carousel-control-prev:hover, .carousel-control-next:hover {
+	opacity: 1;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+	width: 3rem;
+	height: 3rem;
+	background: none;
+}
+.carousel-control-prev-icon::after, .carousel-control-next-icon::after {
+	font-family: 'Font Awesome 6 free';
+	font-weight: 900;
+	content: '\f053';
+	color: #ff2600;
+	font-size: 3rem;
+}
+.carousel-control-next-icon::after {
+	content: '\f054';
+}
+/********************************************************
+8. Customers
+********************************************************/
+.cs-customer-title {
+	font-weight: 600;
+	font-size: 2rem;
+	color: #ff2600;
+	margin-bottom: 3rem;
+}
+.cs-logo-box {
+	margin-bottom: 1.5rem;
+}
+.cs-logo-box:nth-of-type(n+5) {
+	margin-bottom: 0;
+}
+.cs-logo-thumb {
+	width: 10.625rem;
+	height: 4rem;
+}
+.budgets-text {
+	margin-bottom: 6rem;
+}
+.budgets-text h3 {
+	font-weight: 500;
+	font-size: 12rem;
+	color: #ffffff;
+	text-align: center;
+	margin: 0;
+}
+/********************************************************
+9. Budgets
+********************************************************/
+/********************************************************
 20. Responsive Media Queries
-*****************************************************/
+********************************************************/
 @media screen and (max-width: 1399px) {
 /* 0. General */
-/* 1. Menu Bar */
-/* 2. Footer */
-.cs-contact-icon {
-    width: clamp(2.125rem, -0.8725rem + 4vw, 2.625rem);
-	font-size: clamp(2.125rem, -0.8725rem + 4vw, 2.625rem);
+.cs-main-title {
+	font-size: 5.375rem;
 }
-.cs-contact a {
-	font-size: clamp(2.125rem, -0.8725rem + 4vw, 2.625rem);
+/* 2. Footer */
+.cs-contact {
+	font-size: 2.625rem;
+}
+.cs-contact-icon {
+	width: 2.625rem;
+	margin-right: .625rem;
+}
+.cs-tagline {
+	width: 20rem;
+}
+.cs-social-title {
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+}
+.cs-social-link {
+	font-size: 4rem;
+	margin-right: 2rem;
 }
 /* 3. Slider-Banners */
 /* 4. About */
 /* 5. Projects */
-.cs-project-thumb img {
-	height: 356px;
-}
-.cs-thumb-title {
-	font-size: 2.75rem;
-}
-.cs-thumb-category {
-	font-size: 1.375rem;
-}
 /* 6. Services */
 /* 7. Testimonials */
 /* 8. Customers */
@@ -514,30 +600,23 @@ body {
 }
 @media screen and (max-width: 1199px) {
 /* 0. General */
-/* 1. Menu Bar */
+.cs-main-title {
+	font-size: 4.875rem;
+}
 /* 2. Footer */
-.cs-contact-bar, .cs-social-bar {
-	padding: clamp(2rem, 1.0462rem + 4.769vw, 4rem) 0;
+.cs-contact {
+	font-size: 2.125rem;
 }
 .cs-contact-icon {
-    width: clamp(1.375rem, 1.102rem + 1.3652vw, 2.125rem);
-	font-size: clamp(1.375rem, 1.102rem + 1.3652vw, 2.125rem);
+	width: 2.125rem;
+	margin-right: .5rem;
 }
-.cs-contact a {
-	font-size: clamp(1.375rem, 1.102rem + 1.3652vw, 2.125rem);
+.cs-tagline {
+	width: 16.25rem;
 }
 /* 3. Slider-Banners */
 /* 4. About */
 /* 5. Projects */
-.cs-project-thumb img {
-	height: 296px;
-}
-.cs-thumb-title {
-	font-size: 2.0625rem;
-}
-.cs-thumb-category {
-	font-size: 1.0625rem;
-}
 /* 6. Services */
 /* 7. Testimonials */
 /* 8. Customers */
@@ -557,55 +636,24 @@ body {
 /* 0. General */
 /* 1. Menu Bar */
 .nav-item {
-	margin: .5rem 0 0;
+	margin: .75rem 0 0;
 }
 .nav-link {
 	text-align: end;
 }
 /* 2. Footer */
-.cs-contact-title-container {
-    margin-bottom: clamp(1rem, 0.5231rem + 2.3845vw, 2rem);
+.cs-contact-title-container .cs-main-title, .cs-social {
+	margin-bottom: 3rem;
 }
 .cs-tagline-container {
     order: 2;
 }
 .cs-social {
     order: 1;
-    margin-bottom: 3rem;
-}
-.cs-copyright-container {
-	margin-bottom: .5rem;
-}
-.cs-copyright, .cs-terms-pol-links a {
-	font-size: clamp(0.5625rem, 0.4731rem + 0.4471vw, 0.75rem);
 }
 /* 3. Slider-Banners */
 /* 4. About */
-.cs-about-text-container {
-	order: 2;
-}
-.cs-about-img-box {
-    order: 1;
-	width: 50%;
-	margin: 0 0 2rem;
-}
-.cs-milestone-row .col-6:nth-of-type(1),
-.cs-milestone-row .col-6:nth-of-type(2) {
-    margin-bottom: .75rem;
-}
 /* 5. Projects */
-.destacado {
-	width: 100%;
-}
-.cs-project-thumb img {
-	height: 336px;
-}
-.cs-thumb-title {
-	font-size: 2.25rem;
-}
-.cs-thumb-category {
-	font-size: 1.125rem;
-}
 /* 6. Services */
 /* 7. Testimonials */
 /* 8. Customers */
@@ -623,23 +671,13 @@ body {
 }
 @media screen and (max-width: 767px) {
 /* 0. General */
-/* 1. Menu Bar */
 /* 2. Footer */
+.cs-contact-title-container .cs-main-title, .cs-social {
+	margin-bottom: 2.5rem;
+}
 /* 3. Slider-Banners */
 /* 4. About */
-.cs-about-img-box {
-	width: 66%;
-}
 /* 5. Projects */
-.cs-project-thumb img {
-	height: 246px;
-}
-.cs-thumb-title {
-	font-size: 1.625rem;
-}
-.cs-thumb-category {
-	font-size: 1rem;
-}
 /* 6. Services */
 /* 7. Testimonials */
 /* 8. Customers */
@@ -657,20 +695,26 @@ body {
 }
 @media screen and (max-width: 575px) {
 /* 0. General */
-/* 1. Menu Bar */
+.cs-main-title {
+	font-size: clamp(3rem, 0.6471rem + 11.7647vw, 4.875rem);
+}
 /* 2. Footer */
+.cs-contact-title-container .cs-main-title, .cs-social {
+	margin-bottom: 2rem;
+}
+.cs-contact {
+	font-size: clamp(1.3125rem, 0.2929rem + 5.098vw, 2.125rem);
+}
+.cs-contact-icon {
+	width: clamp(1.3125rem, 0.2929rem + 5.098vw, 2.125rem);
+	margin-right: clamp(0.25rem, -0.0637rem + 1.5686vw, 0.5rem);
+}
+.cs-tagline {
+	width: clamp(10rem, 2.1569rem + 39.2157vw, 16.25rem);
+}
 /* 3. Slider-Banners */
 /* 4. About */
-.cs-about-img-box {
-	width: 80%;
-}
 /* 5. Projects */
-.cs-project-thumb img {
-	height: 296px;
-}
-.cs-thumb-title {
-	font-size: 2rem;
-}
 /* 6. Services */
 /* 7. Testimonials */
 /* 8. Customers */
