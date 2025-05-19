@@ -573,12 +573,12 @@ body {
 	width: 20rem;
 }
 .cs-social-title {
-	font-size: 2rem;
-	margin-bottom: 1.5rem;
+	font-size: 1.875rem;
+	margin-bottom: 1.375rem;
 }
 .cs-social-link {
-	font-size: 4rem;
-	margin-right: 2rem;
+	font-size: 3.75rem;
+	margin-right: 1.875rem;
 }
 /* 3. Slider-Banners */
 /* 4. About */
@@ -614,6 +614,14 @@ body {
 .cs-tagline {
 	width: 16.25rem;
 }
+.cs-social-title {
+	font-size: 1.75rem;
+	margin-bottom: 1.25rem;
+}
+.cs-social-link {
+	font-size: 3.5rem;
+	margin-right: 1.75rem;
+}
 /* 3. Slider-Banners */
 /* 4. About */
 /* 5. Projects */
@@ -642,6 +650,9 @@ body {
 	text-align: end;
 }
 /* 2. Footer */
+.cs-contact-bar, .cs-social-bar {
+	padding: 5rem 0;
+}
 .cs-contact-title-container .cs-main-title, .cs-social {
 	margin-bottom: 3rem;
 }
@@ -650,6 +661,9 @@ body {
 }
 .cs-social {
     order: 1;
+}
+.cs-copyright-container {
+	margin-bottom: .5rem;
 }
 /* 3. Slider-Banners */
 /* 4. About */
@@ -699,6 +713,9 @@ body {
 	font-size: clamp(3rem, 0.6471rem + 11.7647vw, 4.875rem);
 }
 /* 2. Footer */
+.cs-contact-bar, .cs-social-bar {
+	padding: clamp(4rem, 2.7451rem + 6.2745vw, 5rem) 0;
+}
 .cs-contact-title-container .cs-main-title, .cs-social {
 	margin-bottom: 2rem;
 }
@@ -711,6 +728,20 @@ body {
 }
 .cs-tagline {
 	width: clamp(10rem, 2.1569rem + 39.2157vw, 16.25rem);
+}
+.cs-social-title {
+	font-size: clamp(1.25rem, 0.6225rem + 3.1373vw, 1.75rem);
+	margin-bottom: clamp(0.75rem, 0.1225rem + 3.1373vw, 1.25rem);
+}
+.cs-social-link {
+	font-size: clamp(2.5rem, 1.2451rem + 6.2745vw, 3.5rem);
+	margin-right: clamp(1.25rem, 0.6225rem + 3.1373vw, 1.75rem);
+}
+.cs-footer-bar {
+	padding: clamp(1rem, 0.3725rem + 3.1373vw, 1.5rem) 0;
+}
+.cs-copyright, .cs-terms-pol-links a {
+	font-size: clamp(0.5625rem, 0.3272rem + 1.1765vw, 0.75rem);
 }
 /* 3. Slider-Banners */
 /* 4. About */
