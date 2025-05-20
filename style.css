@@ -355,7 +355,7 @@ body {
 }
 .cs-project-thumb img {
 	width: 100%;
-	height: 416px;
+	height: 26rem;
 	object-fit: cover;
 	border-radius: 1rem;
 }
@@ -393,6 +393,7 @@ body {
 .cs-thumb-title {
 	font-weight: 900;
 	font-size: 3rem;
+	line-height: 1;
 	color: #ffffff;
 	margin: 0;
 	padding-bottom: .5rem;
@@ -600,6 +601,15 @@ body {
 	height: 3.5rem;
 }
 /* 5. Projects */
+.cs-project-thumb img {
+	height:22.25rem;
+}
+.cs-thumb-title {
+	font-size: 2.5625rem;
+}
+.cs-thumb-category {
+	font-size: 1.25rem;
+}
 /* 6. Services */
 /* 7. Testimonials */
 /* 8. Budgets */
@@ -664,6 +674,15 @@ body {
 	height: 3.25rem;
 }
 /* 5. Projects */
+.cs-project-thumb img {
+	height: 18.5rem;
+}
+.cs-thumb-title {
+	font-size: 2.0625rem;
+}
+.cs-thumb-category {
+	font-size: 1.0625rem;
+}
 /* 6. Services */
 /* 7. Testimonials */
 /* 8. Budgets */
@@ -730,6 +749,18 @@ body {
 	height: 3rem;
 }
 /* 5. Projects */
+.destacado {
+	width: 100%;
+}
+.cs-project-thumb img {
+	height: 21rem;
+}
+.cs-thumb-title {
+	font-size: 2.375rem;
+}
+.cs-thumb-category {
+	font-size: 1.1875rem;
+}
 /* 6. Services */
 /* 7. Testimonials */
 /* 8. Budgets */
@@ -769,6 +800,15 @@ body {
 	margin-bottom: 0;
 }
 /* 5. Projects */
+.cs-project-thumb img {
+	height: 15.375rem;
+}
+.cs-thumb-title {
+	font-size: 1.625rem;
+}
+.cs-thumb-category {
+	font-size: .875rem;
+}
 /* 6. Services */
 /* 7. Testimonials */
 /* 8. Budgets */
@@ -848,6 +888,15 @@ body {
 	height: clamp(2.25rem, 1.3088rem + 4.7059vw, 3rem);
 }
 /* 5. Projects */
+.cs-project-thumb img {
+	height: clamp(15.375rem, 22.4216rem + -19.6078vw, 18.5rem);
+}
+.cs-thumb-title {
+	font-size: 2.0625rem;
+}
+.cs-thumb-category {
+	font-size: 1rem;
+}
 /* 6. Services */
 /* 7. Testimonials */
 /* 8. Budgets */
