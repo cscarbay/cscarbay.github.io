@@ -86,7 +86,7 @@ body {
 	padding: .625rem 0;
 }
 .navbar-primary {
-	background: transparent;
+	background: rgba(11,13,13,.5);
 	transition: all 0.5s ease;
 }
 .navbar-primary-scrollchange {
@@ -423,7 +423,7 @@ body {
 	--bs-accordion-bg: none;
 }
 .cs-service-item {
-	border-bottom: .25rem solid #ffffff !important;
+	border-bottom: .125rem solid #ffffff !important;
 	margin-bottom: 2rem;
 }
 .cs-service-item:last-child {
@@ -451,8 +451,9 @@ body {
 .cs-service-title {
 	font-weight: 700;
 	font-size: 6rem;
+	line-height: 1;
 	color: #98b3b3;
-	margin: 0;
+	margin: 0 0 1rem;
 }
 .accordion-body {
 	padding: 2rem 0;
@@ -615,6 +616,21 @@ body {
 	font-size: 1.25rem;
 }
 /* 6. Services */
+.accordion-button::after {
+	font-size: clamp(1rem, 0.7034rem + 1.4829vw, 2rem);
+}
+.cs-service-title {
+	font-size: 5.25rem;
+}
+.cs-service-main-text p {
+	font-size: 2.125rem;
+}
+.cs-include-text, .cs-include-title {
+	font-size: 1.875rem;
+}
+.cs-include-description  {
+	font-size: 1.5rem;
+}
 /* 7. Testimonials */
 /* 8. Budgets */
 /* 9. Page - Resume CV */
@@ -691,6 +707,18 @@ body {
 	font-size: 1.0625rem;
 }
 /* 6. Services */
+.cs-service-title {
+	font-size: 4.375rem;
+}
+.cs-service-main-text p {
+	font-size: 1.875rem;
+}
+.cs-include-text, .cs-include-title {
+	font-size: 1.625rem;
+}
+.cs-include-description  {
+	font-size: 1.25rem;
+}
 /* 7. Testimonials */
 /* 8. Budgets */
 /* 9. Page - Resume CV */
@@ -769,6 +797,24 @@ body {
 	font-size: 1.1875rem;
 }
 /* 6. Services */
+.cs-service-title {
+	font-size: 3.625rem;
+}
+.cs-service-main-text p {
+	font-size: 1.625rem;
+}
+.cs-includes-items-row .col-lg-4 {
+	margin-bottom: 1rem;
+}
+.cs-includes-items-row .col-lg-4:last-of-type {
+	margin-bottom: 0;
+}
+.cs-include-text, .cs-include-title {
+	font-size: 1.5rem;
+}
+.cs-include-description  {
+	font-size: 1.125rem;
+}
 /* 7. Testimonials */
 /* 8. Budgets */
 /* 9. Page - Resume CV */
@@ -821,6 +867,18 @@ body {
 	font-size: .875rem;
 }
 /* 6. Services */
+.cs-service-title {
+	font-size: 2.75rem;
+}
+.cs-service-main-text p {
+	font-size: 1.375rem;
+}
+.cs-include-text, .cs-include-title {
+	font-size: 1.25rem;
+}
+.cs-include-description  {
+	font-size: 1.0625rem;
+}
 /* 7. Testimonials */
 /* 8. Budgets */
 /* 9. Page - Resume CV */
@@ -913,6 +971,18 @@ body {
 	font-size: 1rem;
 }
 /* 6. Services */
+.cs-service-title {
+	font-size: clamp(1.75rem, 0.4951rem + 6.2745vw, 2.75rem);
+}
+.cs-service-main-text p {
+	font-size: clamp(1.125rem, 0.8113rem + 1.5686vw, 1.375rem);
+}
+.cs-include-text, .cs-include-title {
+	font-size: clamp(1rem, 0.6863rem + 1.5686vw, 1.25rem);
+}
+.cs-include-description  {
+	font-size: clamp(1rem, 0.9216rem + 0.3922vw, 1.0625rem);
+}
 /* 7. Testimonials */
 /* 8. Budgets */
 /* 9. Page - Resume CV */
