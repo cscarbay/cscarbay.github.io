@@ -1,0 +1,1 @@
+<h2>Registro de Pagos</h2>
