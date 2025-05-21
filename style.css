@@ -564,6 +564,114 @@ body {
 	margin: 0 0 6rem;
 }
 /********************************************************
+9. Page - Resume CV
+********************************************************/
+.cs-resume-cv-title-row, .cs-resume-cv-row {
+	margin-bottom: 4rem;
+}
+.cs-resume-title h3 {
+	font-weight: 900;
+	font-size: 8rem;
+	line-height: .8125;
+	margin-bottom: 2rem;
+}
+.cs-resume-title h4 {
+	font-size: 3rem;
+	line-height: .8125;
+	color: #ff2600;
+	margin: 0;
+}
+.cs-resume-title h4 span {
+	color: #ffffff;
+}
+.cs-resume-profile, .cs-resume-education, .cs-resume-technicals, .cs-resume-soft {
+	margin-bottom: 2rem;
+}
+.cs-resume-languages, .cs-resume-experience {
+	margin-bottom: 0;
+}
+.cs-resume-profile-title, .cs-resume-education-title, .cs-resume-experience-title, 
+.cs-resume-technicals-title, .cs-resume-soft-title, .cs-resume-languages-title {
+	font-weight: 700;
+	font-size: 3rem;
+	color: #ff2600;
+	margin-bottom: .5rem;
+}
+.cs-resume-technicals-title, .cs-resume-soft-title, .cs-resume-languages-title {
+	font-size: 2.5rem;
+}
+.cs-resume-profile p {
+	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+.cs-resume-profile p:last-of-type {
+	margin-bottom: 0;
+}
+.cs-edu-title {
+	font-weight: 700;
+	font-size: 2rem;
+	margin: 0 0 .5rem;
+}
+.cs-edu-text{
+	font-size: 1.25rem;
+	margin: 0 0 .5rem;
+}
+.cs-edu-date {
+	font-weight: 600;
+	font-size: 1.5rem;
+	margin: 0 0 .5rem;
+}
+.cs-tech-title {
+	font-weight: 700;
+	font-size: 1.5rem;
+	color: #98b3b3;
+	margin: 0;
+}
+.cs-tech-text, .cs-soft-text, .cs-lang-text {
+	font-size: 1.5rem;
+	margin: 0 0 .75rem;
+}
+.cs-tech-text:last-of-type {
+	margin: 0;
+}
+.cs-soft-text, .cs-lang-text {
+	margin: 0;
+}
+.cs-lang-text span {
+	font-weight: 600;
+}
+.cs-work-group {
+	margin-bottom: 2rem;
+}
+.cs-work-group:last-of-type {
+	margin-bottom: 0;
+}
+.cs-exp-title {
+	font-weight: 700;
+	font-size: 2rem;
+	margin: 0 0 .5rem;
+}
+.cs-exp-charge, .cs-exp-date {
+	font-style: italic;
+	font-size: 1.75rem;
+	color: #98b3b3;
+	margin: 0 0 .5rem;
+}
+.cs-exp-date {
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+.cs-exp-text {
+	font-size: 1.5rem;
+	margin: 0 0 .5rem;
+}
+.cs-resume-experience ul {
+	margin: 0;
+}
+.cs-exp-text li::marker {
+	color: #ff2600;
+}
+/********************************************************
 19. Responsive Media Queries
 ********************************************************/
 @media screen and (max-width: 1399px) {
