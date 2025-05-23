@@ -569,6 +569,9 @@ body {
 .cs-resume-cv-title-row, .cs-resume-cv-row {
 	margin-bottom: 4rem;
 }
+.cs-resume-title-row {
+	order: 1;
+}
 .cs-resume-title h3 {
 	font-weight: 900;
 	font-size: 8rem;
@@ -583,6 +586,9 @@ body {
 }
 .cs-resume-title h4 span {
 	color: #ffffff;
+}
+.cs-resume-img-box {
+	order: 2;
 }
 .cs-resume-profile, .cs-resume-education, .cs-resume-technicals, .cs-resume-soft {
 	margin-bottom: 2rem;
@@ -651,6 +657,9 @@ body {
 	font-size: 2rem;
 	margin: 0 0 .5rem;
 }
+.cs-exp-title span {
+	font-weight: 400;
+}
 .cs-exp-charge, .cs-exp-date {
 	font-style: italic;
 	font-size: 1.75rem;
@@ -670,6 +679,71 @@ body {
 }
 .cs-exp-text li::marker {
 	color: #ff2600;
+}
+/********************************************************
+10. Page - Single
+********************************************************/
+.cs-project-text, .cs-project-location {
+	margin-bottom: 2rem;
+}
+.cs-project-text p {
+	font-size: 2rem;
+	margin-bottom: 0;
+}
+.cs-project-text p a {
+	text-decoration: none;
+	color: #98b3b3;
+	transition: all .3s ease;
+}
+.cs-project-text p a:hover, .cs-project-text p a:focus, .cs-project-text p a:active {
+	text-decoration: underline;
+	color:#ff2600;
+}
+.cs-project-location-title, .cs-project-year-title {
+	font-weight: 600;
+	font-size: 2rem;
+	color: #ff2600;
+	margin-bottom: .5rem;
+}
+.cs-project-location p, .cs-project-year p {
+	font-weight: 900;
+	font-size: 2rem;
+	margin: 0;
+}
+.cs-project-year {
+	margin-bottom: 6rem;
+}
+.cs-project-tags {
+	font-weight: 900;
+	font-size: 2rem;
+	color: #98b3b3;
+	margin: 0;
+}
+.cs-project-tags ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.cs-project-gallery figure {
+	margin: 0 0 1.5rem;
+}
+.cs-project-gallery figure:last-of-type {
+	margin: 0;
+}
+.cs-project-gallery figure img, .cs-project-gallery figure video {
+	width: 100%;
+	height: auto;
+	border-radius: 1rem 1rem 0 0;
+	vertical-align: middle;
+}
+.cs-project-gallery figure figcaption {
+	font-weight: 600;
+	font-size: 1.25rem;
+	background: #ffffff;
+	color: #0b0d0d;
+	border-radius: 0 0 1rem 1rem;
+	margin: 0;
+	padding: .25rem 1rem;
 }
 /********************************************************
 19. Responsive Media Queries
@@ -782,6 +856,37 @@ body {
 	margin: 0 0 5rem;
 }
 /* 9. Page - Resume CV */
+.cs-resume-title h3 {
+	font-size: 7.25rem;
+	margin-bottom: 1.75rem;
+}
+.cs-resume-title h4 {
+	font-size: 2.75rem;
+}
+.cs-resume-profile-title, .cs-resume-education-title, .cs-resume-experience-title, 
+.cs-resume-technicals-title, .cs-resume-soft-title, .cs-resume-languages-title {
+	font-size: 2.625rem;
+}
+.cs-resume-technicals-title, .cs-resume-soft-title, .cs-resume-languages-title {
+	font-size: 2.25rem;
+}
+.cs-resume-profile p {
+	font-size: 1.3125rem;
+	margin-bottom: 1.3125rem;
+}
+.cs-edu-title, .cs-exp-title {
+	font-size: 1.8125rem;
+}
+.cs-edu-text{
+	font-size: 1.0625rem;
+}
+.cs-edu-date, .cs-tech-title, .cs-tech-text, .cs-soft-text, 
+.cs-lang-text, .cs-exp-date, .cs-exp-text {
+	font-size: 1.3125rem;
+}
+.cs-exp-charge {
+	font-size: 1.5625rem;
+}
 /* 10. Page - Single */
 /* 11. Page - Only Text */
 /* 12. Page - Forms */
@@ -895,6 +1000,37 @@ body {
 	margin: 0 0 4.5rem;
 }
 /* 9. Page - Resume CV */
+.cs-resume-title h3 {
+	font-size: 6.25rem;
+	margin-bottom: 1.5rem;
+}
+.cs-resume-title h4 {
+	font-size: 2.3125rem;
+}
+.cs-resume-profile-title, .cs-resume-education-title, .cs-resume-experience-title, 
+.cs-resume-technicals-title, .cs-resume-soft-title, .cs-resume-languages-title {
+	font-size: 2.25rem;
+}
+.cs-resume-technicals-title, .cs-resume-soft-title, .cs-resume-languages-title {
+	font-size: 1.875rem;
+}
+.cs-resume-profile p {
+	font-size: 1.125rem;
+	margin-bottom: 1.125rem;
+}
+.cs-edu-title, .cs-exp-title {
+	font-size: 1.625rem;
+}
+.cs-edu-text{
+	font-size: .875rem;
+}
+.cs-edu-date, .cs-tech-title, .cs-tech-text, .cs-soft-text, 
+.cs-lang-text, .cs-exp-date, .cs-exp-text {
+	font-size: 1.125rem;
+}
+.cs-exp-charge {
+	font-size: 1.3125rem;
+}
 /* 10. Page - Single */
 /* 11. Page - Only Text */
 /* 12. Page - Forms */
@@ -1005,6 +1141,29 @@ body {
 	margin: 0 0 3rem;
 }
 /* 9. Page - Resume CV */
+.cs-resume-title-row {
+	order: 2;
+	justify-content: center;
+}
+.cs-resume-title h3 {
+	font-size: 6rem;
+	margin-bottom: 1.375rem;
+	text-align: center;
+}
+.cs-resume-title h3 br {
+	display: none;
+}
+.cs-resume-title h4 {
+	font-size: 2.125rem;
+	text-align: center;
+}
+.cs-resume-img-box {
+	order: 1;
+	margin: 0 auto 3rem;
+}
+.cs-resume-languages {
+	margin-bottom: 2rem;
+}
 /* 10. Page - Single */
 /* 11. Page - Only Text */
 /* 12. Page - Forms */
@@ -1094,6 +1253,34 @@ body {
 	margin: 0 0 2.375rem;
 }
 /* 9. Page - Resume CV */
+.cs-resume-title h3 {
+	font-size: 4.5rem;
+	margin-bottom: 1.25rem;
+}
+.cs-resume-title h4 {
+	font-size: 1.875rem;
+}
+.cs-resume-profile-title, .cs-resume-education-title, .cs-resume-experience-title, 
+.cs-resume-technicals-title, .cs-resume-soft-title, .cs-resume-languages-title {
+	font-size: 2.125rem;
+}
+.cs-resume-technicals-title, .cs-resume-soft-title, .cs-resume-languages-title {
+	font-size: 1.75rem;
+}
+.cs-resume-profile p {
+	font-size: 1.0625rem;
+	margin-bottom: 1.0625rem;
+}
+.cs-edu-title, .cs-exp-title {
+	font-size: 1.5625rem;
+}
+.cs-edu-date, .cs-tech-title, .cs-tech-text, .cs-soft-text, 
+.cs-lang-text, .cs-exp-date, .cs-exp-text {
+	font-size: 1.0625rem;
+}
+.cs-exp-charge {
+	font-size: 1.25rem;
+}
 /* 10. Page - Single */
 /* 11. Page - Only Text */
 /* 12. Page - Forms */
@@ -1222,6 +1409,37 @@ body {
 	margin: 0 0 clamp(1.375rem, 1.0784rem + 1.4829vw, 2.375rem);
 }
 /* 9. Page - Resume CV */
+.cs-resume-title h3 {
+	font-size: clamp(2.5rem, -0.0098rem + 12.549vw, 4.5rem);
+	margin-bottom: clamp(1.125rem, 0.9681rem + 0.7843vw, 1.25rem);
+}
+.cs-resume-title h4 {
+	font-size: clamp(1.125rem, 0.1838rem + 4.7059vw, 1.875rem);
+}
+.cs-resume-profile-title, .cs-resume-education-title, .cs-resume-experience-title, 
+.cs-resume-technicals-title, .cs-resume-soft-title, .cs-resume-languages-title {
+	font-size: clamp(1.625rem, 0.9975rem + 3.1373vw, 2.125rem);
+}
+.cs-resume-technicals-title, .cs-resume-soft-title, .cs-resume-languages-title {
+	font-size: clamp(1.375rem, 0.9044rem + 2.3529vw, 1.75rem);
+}
+.cs-resume-profile p {
+	font-size: clamp(0.875rem, 0.6397rem + 1.1765vw, 1.0625rem);
+	margin-bottom: clamp(0.875rem, 0.6397rem + 1.1765vw, 1.0625rem);
+}
+.cs-edu-title, .cs-exp-title {
+	font-size: clamp(1.375rem, 1.1397rem + 1.1765vw, 1.5625rem);
+}
+.cs-edu-text{
+	font-size: clamp(0.75rem, 0.5931rem + 0.7843vw, 0.875rem);
+}
+.cs-edu-date, .cs-tech-title, .cs-tech-text, .cs-soft-text, 
+.cs-lang-text, .cs-exp-date, .cs-exp-text {
+	font-size: clamp(0.875rem, 0.6397rem + 1.1765vw, 1.0625rem);
+}
+.cs-exp-charge {
+	font-size: clamp(1.0625rem, 0.8272rem + 1.1765vw, 1.25rem);
+}
 /* 10. Page - Single */
 /* 11. Page - Only Text */
 /* 12. Page - Forms */
