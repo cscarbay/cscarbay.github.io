@@ -1,0 +1,1260 @@
+/*
+Theme Name: D' HOY DISTRIBUTION South Florida Inc. - WEBSITE - JUNE 2025
+URL: https://dhoydistribution.com
+-
+Website Author: Carlos Scarbay | Diseño Inteligente
+Website Author URL: https://cscarbay.github.io
+Version: 1.0
+*/
+
+/********************************************************
+Documento CSS
+********************************************************/
+
+/********************************************************
+0. General
+1. NavBar
+2. Footer
+3. Slider-Banners
+4. Services Section
+5. About Section
+6. Products Section
+7. Contact CTA Section
+8. About Us Page
+9. Contact Us Page
+10. Responsive Media Queries
+********************************************************/
+
+/********************************************************
+0. General
+********************************************************/
+
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+    font-family: 'Gantari';
+	font-size: 1rem;
+	font-weight: 500;
+    line-height: 1;
+	font-kerning: auto;
+	color: #111111 !important;
+	background: #ffffff !important;
+}
+::selection {
+	background: #32cd32 !important;
+	color: #013220 !important;
+}
+.dh-content {
+	padding: 6rem 0;
+}
+.bg-alt {
+	background: rgba(50, 205, 50, .2);
+}
+.dh-cta-btn {
+	font-weight: 900;
+	font-size: 2rem;
+	line-height: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #013220;
+	background: #32cd32;
+	border: none;
+	padding: 1rem 2rem;
+	border-radius:  2.5rem;
+	transition: all .3s ease;
+}
+.dh-cta-btn:hover, .dh-cta-btn:focus, .dh-cta-btn:active {
+	background: #013220;
+	color: #ffbf00;
+}
+
+/********************************************************
+1. NavBar
+********************************************************/
+
+.navbar {
+	padding: 1.5rem 0;
+}
+.navbar-primary {
+	background: rgba(1, 50, 32, .9);
+	transition: all 0.5s ease;
+}
+.navbar-primary-scrollchange, .navbar-secondary {
+	background: rgba(1, 50, 32, 1);
+}
+.navbar-brand {
+	padding: 0;
+	margin: 0;
+}
+.navbar-brand img {
+	width: 12.5rem;
+	height: 3.125rem;
+}
+.nav-container {
+    width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+.nav-item {
+	margin: 0 2rem 0 0;
+}
+.nav-item:last-child {
+	margin-right: 0;
+}
+.nav-link {
+	font-weight: 900;
+	font-size: 1.5rem;
+    text-transform: uppercase;
+	color: #32cd32;
+	padding: 0 !important;
+	transition: all .3s ease;
+}
+.nav-link:hover, .nav-link:focus, .nav-link:active {
+	color: #ffbf00;
+}
+.navbar-toggler {
+	height: 2rem;
+	width: 2rem;
+	border: none;
+	padding: 0;
+	transition: none;
+}
+.navbar-toggler:hover, .navbar-toggler:focus, .navbar-toggler:active {
+	box-shadow: none;
+}
+.dh-toggler-icon {
+	display: inline-block;
+	height: 2rem;
+	width: 2rem;
+	border: none;
+	padding: 0;
+	transition: none;
+}
+.navbar-toggler.collapsed .dh-toggler-icon::before, .navbar-toggler .dh-toggler-icon::before {
+	display: inline-block;
+	height: 2rem;
+	width: 2rem;
+	font-family: 'Font Awesome 6 free';
+	font-weight: 900;
+	content: '\f0c9';
+	font-size: 2rem;
+	color: #32cd32;
+	background-image: none !important;
+	transition: all .3s ease;
+}
+.navbar-toggler .dh-toggler-icon::before {
+	content: '\f00d';
+	color: #ffffff;
+}
+
+/********************************************************
+2. Footer
+********************************************************/
+
+.dh-footer-bar {
+    padding: 4rem 0 2rem;
+    background: #013220;
+}
+.dh-contact-info {
+    margin-bottom: 2rem;
+}
+.dh-logo-container {
+    width: auto;
+}
+.dh-logo {
+    width: 12.5rem;
+	height: 5.125rem;
+}
+.dh-contact-info-container {
+    width: auto;
+}
+.dh-contact-links {
+    margin-bottom: 1.5rem;
+}
+.dh-contact {
+    font-size: 2rem;
+}
+.dh-contact-icon {
+    color: #32cd32;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+.dh-contact a {
+    font-weight: 900;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all .3s ease;
+}
+.dh-contact a:hover, .dh-contact a:focus, .dh-contact a:active {
+    text-decoration: underline;
+    color: #ffbf00;
+}
+.dh-location {
+    font-size: 1.75rem;
+    color: #ffffff;
+}
+.dh-location-icon {
+    color: #32cd32;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+.dh-location p {
+    margin: 0;
+}
+.dh-copyright-bar {
+    padding-top: 2rem;
+    border-top: 2px solid #e86100;
+}
+.dh-copyright-bar p {
+    font-size: .75rem;
+    color: #ffffff;
+    margin: 0 2rem 0 0;
+}
+.dh-copyright-bar p:last-child {
+	margin-right: 0;
+}
+.dh-copyright-bar span {
+    font-weight: 800;
+}
+.dh-copyright-bar a {
+    font-weight: 800;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+.dh-copyright-bar a:hover, .dh-copyright-bar a:focus, .dh-copyright-bar a:active {
+    text-decoration: underline;
+    color: #32cd32;
+}
+
+/********************************************************
+3. Slider-Banners
+********************************************************/
+
+.dh-slider-banners {
+	padding: 0;
+}
+.dh-slider-banners .carousel-item {
+	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+}
+.dh-slider-banner::before {
+	position: absolute;
+	display: block;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: rgba(1, 50, 32, .25);
+	mix-blend-mode: soft-light;
+}
+.dh-slider-banner-text {
+	position: relative;
+	font-weight:900;
+	font-size: 6rem;
+    text-transform: uppercase;
+	text-align: center;
+	color: #ffffff;
+	margin: 0;
+	text-shadow: 0 0 3rem rgba(1,50,32,.33);
+}
+
+/********************************************************
+4. Services Section
+********************************************************/
+
+.dh-services-content {
+	margin-bottom: 6rem;
+}
+.dh-title {
+	font-weight: 900;
+	font-size: 3.5rem;
+	text-transform: uppercase;
+	text-align: center;
+	color: #013220;
+	margin-bottom: 2rem;
+}
+.dh-section-text {
+	font-size: 2rem;
+	text-align: center;
+	color: #282828;
+	margin-bottom: 0;
+}
+.dh-service-icon img {
+	width: 6rem;
+	display: block;
+	margin-bottom: 1.5rem;
+}
+.dh-service-title {
+	font-weight: 900;
+	font-size: 2rem;
+	color: #013220;
+	line-height: 1;
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+.dh-service-text {
+	font-size: 1.625rem;
+	color: #282828;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+/********************************************************
+5. About Section
+********************************************************/
+
+.dh-about-section-title {
+	font-weight: 900;
+	line-height: 1;
+	color: #013220;
+	margin-bottom: 1.5rem;
+}
+.dh-about-section-title .upcase {
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+.dh-about-section-title .orange {
+	font-size: 2.875rem;
+	color: #e86100;
+}
+.dh-about-section-text {
+	font-size: 1.75rem;
+	color: #282828;
+	margin-bottom: 0;
+}
+.dh-about-section-text .bold {
+	font-weight: 900;
+	color: #013220;
+}
+.dh-about-modules-section {
+	margin-top: 2rem;
+}
+.dh-about-icon img {
+	width: 6rem;
+	display: block;
+	margin-bottom: 1rem;
+}
+.dh-about-title {
+	font-weight: 900;
+	font-size: 2.5rem;
+	color: #013220;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+.dh-about-text {
+	font-size: 1.5rem;
+	color: #282828;
+	text-align: center;
+	margin-bottom: 0;
+}
+.dh-about-img-section img {
+	width: 100%;
+	border-radius: 50%;
+}
+
+/********************************************************
+6. Products Section
+********************************************************/
+
+.dh-products-content {
+	margin-bottom: 3rem;
+}
+.dh-products-title .dh-title {
+	margin-bottom: 0;
+}
+.dh-product-module {
+	margin-bottom: 1.5rem;
+}
+.dh-product-module:nth-of-type(n+4) {
+	margin-bottom: 0;
+}
+.dh-product-img img {
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	border-radius: 50%;
+	display: block;
+}
+
+/********************************************************
+7. Contact CTA Section
+********************************************************/
+
+.dh-contact-cta-content {
+	margin-bottom: 4rem;
+}
+.dh-contact-cta-title .dh-title {
+	margin-bottom: 1.5rem;
+}
+
+/********************************************************
+8. About Us Page
+********************************************************/
+
+.header-banner {
+	background: #32cd32;
+	padding: 3rem 0;
+	margin-top: 6rem;
+}
+.dh-header-title {
+	font-weight: 900;
+	font-size: 4.5rem;
+	text-transform: uppercase;
+	color: #013220;
+	margin: 0;
+}
+.dh-about-us-banners, .dh-about-us-container {
+	margin-bottom: 4.5rem;
+}
+.dh-about-us-banners .carousel-item {
+	height: 37.375rem;
+	background-size: cover;
+	background-position: center center;
+}
+.dh-about-us-banner {
+	border-radius: 2rem;
+}
+.dh-about-us-text {
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+.dh-about-us-text span {
+	font-weight: 900;
+	color: #013220;
+}
+.dh-about-us-h3 {
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 1;
+	text-align: center;
+	color: #013220;
+	margin-bottom: 0;
+}
+.dh-about-us-text-mi-vi {
+	margin-top: 4.5rem;
+}
+.dh-about-us-h2 {
+	font-weight: 900;
+	font-size: 4rem;
+	text-align: center;
+	color: #32cd32;
+	margin-bottom: 2rem;
+}
+.dh-about-us-text-mi-vi .dh-about-us-text {
+	margin-bottom: 0;
+}
+
+/********************************************************
+9. Contact Us Page
+********************************************************/
+
+.dh-contact-us-content {
+	margin-bottom: 4rem;
+}
+.dh-contact-us-title {
+	font-weight: 900;
+	font-size: 4rem;
+	line-height: 1;
+	color: #013220;
+	margin-bottom: 2rem;
+}
+.dh-contact-us-text {
+	font-size: 2.5rem;
+	margin-bottom: 0;
+}
+.form-input {
+	width: 100%;
+	font-size: 2rem;
+	font-weight: 900;
+	color: #111111;
+	border: none;
+	border-bottom: 3px solid #32cd32;
+	padding: 8px;
+    margin-bottom: 24px;
+}
+.fi-textarea {
+	font-weight: 500;
+}
+textarea {
+    resize: none;
+}
+.form-input::placeholder {
+	color: #013220;
+}
+.form-input:focus-visible {
+	outline: none;
+}
+
+/********************************************************
+10. Responsive Media Queries
+********************************************************/
+
+@media screen and (max-width: 1399px) {
+
+	/* 1. NavBar */
+
+	.navbar {
+		padding: 1.25rem 0;
+	}
+	.navbar-brand img {
+		width: 11.25rem;
+		height: 2.75rem;
+	}
+	.nav-link {
+		font-size: 1.375rem;
+	}
+
+	/* 2. Footer */
+	
+	.dh-logo {
+		width: 11.25rem;
+		height: 4.5625rem;
+	}
+	.dh-contact {
+		font-size: 1.75rem;
+	}
+	.dh-location {
+		font-size: 1.5rem;
+	}
+	.dh-copyright-bar p {
+		font-size: .625rem;
+	}
+
+	/* 3. Slider-Banners */
+
+	.dh-slider-banners .carousel-item {
+		height: 90vh;
+	}
+	.dh-slider-banner-text {
+		font-size: 5rem;
+	}
+
+	/* 4. Services Section */
+	
+	.dh-title {
+		font-size: 3.125rem;
+	}
+	.dh-section-text {
+		font-size: 1.75rem;
+	}
+	.dh-service-icon img {
+		width: 5rem;
+	}
+	.dh-service-title {
+		font-size: 1.75rem;
+	}
+	.dh-service-text {
+		font-size: 1.375rem;
+	}
+
+	/* 5. About Section */
+	
+	.dh-about-section-title .upcase {
+		font-size: 2.625rem;
+	}
+	.dh-about-section-title .orange {
+		font-size: 2.5rem;
+	}
+	.dh-about-section-text {
+		font-size: 1.5rem;
+	}
+	.dh-about-icon img {
+		width: 5rem;
+	}
+	.dh-about-title {
+		font-size: 2.125rem;
+	}
+	.dh-about-text {
+		font-size: 1.25rem;
+	}
+
+	/* 6. Products Section */
+	
+	.dh-product-img img {
+		width: 70%;
+	}
+
+	/* 7. Contact CTA Section */
+
+	.dh-contact-cta-content {
+		margin-bottom: 3.5rem;
+	}
+	
+	/* 8. About Us Page */
+
+	.header-banner {
+		padding: 2.5rem 0;
+		margin-top: 5.25rem;
+	}
+	.dh-header-title {
+		font-size: 4rem;
+	}
+	.dh-about-us-banners .carousel-item {
+		height: 32.25rem;
+	}
+	.dh-about-us-text {
+		font-size: 1.75rem;
+	}
+	.dh-about-us-h3 {
+		font-size: 2.625rem;
+	}
+	.dh-about-us-h2 {
+		font-size: 3.5rem;
+	}
+
+	/* 9. Contact Us Page */
+	
+	.dh-contact-us-title {
+		font-size: 3.5rem;
+	}
+	.dh-contact-us-text {
+		font-size: 2.1875rem;
+	}
+
+}
+
+@media screen and (max-width: 1199px) {
+
+	/* 0. General */
+
+	.dh-content {
+		padding: 4.5rem 0;
+	}
+	.dh-cta-btn {
+		font-size: 1.75rem;
+	}
+
+	/* 1. NavBar */
+
+	.navbar {
+		padding: 1.125rem 0;
+	}
+	.navbar-brand img {
+		width: 10rem;
+		height: 2.4375rem;
+	}
+
+	/* 2. Footer */
+	
+	.dh-footer-bar {
+		padding: 3.75rem 0 1.75rem;
+	}
+	.dh-contact-info {
+		margin-bottom: 1.75rem;
+	}
+	.dh-logo {
+		width: 10rem;
+		height: 4.0625rem;
+	}
+	.dh-contact-links {
+		margin-bottom: 1.125rem;
+	}
+	.dh-contact {
+		font-size: 1.375rem;
+	}
+	.dh-location {
+		font-size: 1.25rem;
+	}
+	.dh-copyright-bar {
+		padding-top: 1.75rem;
+	}
+
+	/* 3. Slider-Banners */
+
+	.dh-slider-banners .carousel-item {
+		height: 80vh;
+	}
+	.dh-slider-banner-text {
+		font-size: 4.5rem;
+	}
+
+	/* 4. Services Section */
+
+	.dh-services-content {
+		margin-bottom: 4rem;
+	}
+	.dh-title {
+		font-size: 2.5rem;
+		margin-bottom: 1.5rem;
+	}
+	.dh-section-text {
+		font-size: 1.4375rem;
+	}
+	.dh-service-icon img {
+		width: 4rem;
+		margin-bottom: 1rem;
+	}
+	.dh-service-title {
+		font-size: 1.4375rem;
+		margin-bottom: 1rem;
+	}
+	.dh-service-text {
+		font-size: 1.1875rem;
+	}
+
+	/* 5. About Section */
+	
+	.dh-about-section-title {
+		margin-bottom: 1.25rem;
+	}
+	.dh-about-section-title .upcase {
+		font-size: 2.25rem;
+	}
+	.dh-about-section-title .orange {
+		font-size: 2.1875rem;
+	}
+	.dh-about-section-text {
+		font-size: 1.25rem;
+	}
+	.dh-about-modules-section {
+		margin-top: 1.5rem;
+	}
+	.dh-about-icon img {
+		width: 4rem;
+		margin-bottom: .75rem;
+	}
+	.dh-about-title {
+		font-size: 1.75rem;
+		margin-bottom: .75rem;
+	}
+	.dh-about-text {
+		font-size: 1.0625rem;
+	}
+
+	/* 6. Products Section */
+	
+	.dh-products-content {
+		margin-bottom: 2rem;
+	}
+	.dh-product-img img {
+		width: 60%;
+	}
+
+	/* 7. Contact CTA Section */
+
+	.dh-contact-cta-content {
+		margin-bottom: 3rem;
+	}
+	
+	/* 8. About Us Page */
+
+	.header-banner {
+		padding: 2rem 0;
+		margin-top: 4.6875rem;
+	}
+	.dh-header-title {
+		font-size: 3.25rem;
+	}
+	.dh-about-us-banners, .dh-about-us-container {
+		margin-bottom: 3.5rem;
+	}
+	.dh-about-us-banners .carousel-item {
+		height: 27.125rem;
+	}
+	.dh-about-us-text {
+		font-size: 1.4375rem;
+		margin-bottom: 1.25rem;
+	}
+	.dh-about-us-h3 {
+		font-size: 2.25rem;
+	}
+	.dh-about-us-text-mi-vi {
+		margin-top: 3.25rem;
+	}
+	.dh-about-us-h2 {
+		font-size: 2.75rem;
+		margin-bottom: 1.25rem;
+	}
+
+	/* 9. Contact Us Page */
+	
+	.dh-contact-us-title {
+		font-size: 2.875rem;
+	}
+	.dh-contact-us-text {
+		font-size: 1.8125rem;
+	}
+	.form-input {
+		font-size: 1.75rem;
+	}
+}
+
+@media screen and (max-width: 991px) {
+
+	/* 0. General */
+
+	.dh-content {
+		padding: 3.5rem 0;
+	}
+	.dh-cta-btn {
+		font-size: 1.5rem;
+	}
+
+	/* 1. NavBar */
+
+	.navbar {
+		padding: 1.125rem 0;
+	}
+	.nav-item {
+		margin: 1rem 0 0;
+	}
+	.nav-link {
+		font-size: 1.25rem;
+		text-align: end;
+	}
+
+	/* 2. Footer */
+	
+	.dh-footer-bar {
+		padding: 3.25rem 0 1.25rem;
+	}
+	.dh-contact-info {
+		margin-bottom: 1.25rem;
+		justify-content: center !important;
+	}
+	.dh-logo-container {
+		margin-bottom: 2rem;
+	}
+	.dh-contact-links {
+		margin-bottom: 1rem;
+	}
+	.dh-contact {
+		font-size: 1.25rem;
+	}
+	.dh-location {
+		font-size: 1.125rem;
+	}
+	.dh-copyright-bar {
+		padding-top: 1rem;
+	}
+	.dh-copyright-bar p {
+		font-size: .5625rem;
+	}
+
+	/* 3. Slider-Banners */
+
+	.dh-slider-banners .carousel-item {
+		height: 70vh;
+	}
+	.dh-slider-banner-text {
+		font-size: 3.75rem;
+	}
+
+	/* 4. Services Section */
+
+	.dh-services-content {
+		margin-bottom: 3rem;
+	}
+	.dh-title {
+		font-size: 2.125rem;
+		margin-bottom: 1.25rem;
+	}
+	.dh-section-text {
+		font-size: 1.3125rem;
+	}
+	.dh-service-icon img {
+		width: 3rem;
+		margin-bottom: .75rem;
+	}
+	.dh-service-title {
+		font-size: 1.3125rem;
+		margin-bottom: 1rem;
+	}
+	.dh-service-text {
+		font-size: .875rem;
+	}
+
+	/* 5. About Section */
+	
+	.dh-about-section-title {
+		margin-bottom: .75rem;
+	}
+	.dh-about-section-title .upcase {
+		font-size: 1.625rem;
+	}
+	.dh-about-section-title .orange {
+		font-size: 1.5625rem;
+	}
+	.dh-about-section-text {
+		font-size: 1rem;
+	}
+	.dh-about-modules-section {
+		margin-top: 1rem;
+	}
+	.dh-about-icon img {
+		width: 3rem;
+		margin-bottom: .5rem;
+	}
+	.dh-about-title {
+		font-size: 1.3125rem;
+		margin-bottom: .5rem;
+	}
+	.dh-about-text {
+		font-size: .875rem;
+	}
+
+	/* 7. Contact CTA Section */
+
+	.dh-contact-cta-content {
+		margin-bottom: 2.5rem;
+	}
+	
+	/* 8. About Us Page */
+
+	.header-banner {
+		padding: 1.5rem 0;
+	}
+	.dh-header-title {
+		font-size: 2.75rem;
+	}
+	.dh-about-us-banners, .dh-about-us-container {
+		margin-bottom: 2.75rem;
+	}
+	.dh-about-us-banners .carousel-item {
+		height: 20.375rem;
+	}
+	.dh-about-us-text {
+		font-size: 1.0625rem;
+		margin-bottom: 1rem;
+	}
+	.dh-about-us-h3 {
+		font-size: 1.6875rem;
+	}
+	.dh-about-us-text-mi-vi {
+		margin-top: 2rem;
+	}
+	.dh-about-us-h2 {
+		font-size: 2.125rem;
+		margin-bottom: .75rem;
+	}
+
+	/* 9. Contact Us Page */
+	
+	.dh-contact-us-title {
+		font-size: 2.375rem;
+	margin-bottom: 1.25rem;
+	}
+	.dh-contact-us-text {
+		font-size: 1.3125rem;
+	}
+	.form-input {
+		font-size: 1.5rem;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+
+	/* 0. General */
+
+	.dh-content {
+		padding: 2.75rem 0;
+	}
+	.dh-cta-btn {
+		font-size: 1.25rem;
+	}
+
+	/* 1. NavBar */
+
+	.navbar {
+		padding: 1rem 0;
+	}
+	.navbar-brand img {
+		width: 8.75rem;
+		height: 2.1875rem;
+	}
+
+	/* 2. Footer */
+	
+	.dh-footer-bar {
+		padding: 2.5rem 0 1rem;
+	}
+	.dh-contact-info {
+		margin-bottom: 1rem;
+	}
+	.dh-logo-container {
+		margin-bottom: 1.5rem;
+	}
+	.dh-logo {
+		width: 8.75rem;
+		height: 3.5625rem;
+	}
+	.dh-contact-links {
+		margin-bottom: .75rem;
+	}
+	.dh-contact {
+		font-size: 1.125rem;
+	}
+	.dh-location {
+		font-size: 1rem;
+	}
+
+	/* 3. Slider-Banners */
+
+	.dh-slider-banners .carousel-item {
+		height: 60vh;
+	}
+	.dh-slider-banner-text {
+		font-size: 3rem;
+	}
+	/* 4. Services Section */
+
+	.dh-services-content {
+		margin-bottom: 2rem;
+	}
+	.dh-title {
+		font-size: 2rem;
+		margin-bottom: 1.125rem;
+	}
+	.dh-section-text {
+		font-size: 1.0625rem;
+	}
+	.dh-service-module {
+		margin-bottom: 1.5rem;
+	}
+	.dh-service-module:last-of-type {
+		margin-bottom: 0;
+	}
+	.dh-service-icon img {
+		margin-bottom: .5rem;
+	}
+	.dh-service-title {
+		margin-bottom: .5rem;
+	}
+	.dh-service-title br {
+		display: none;
+	}
+
+	/* 5. About Section */
+
+	.dh-about-section {
+		order: 2;
+	}
+	.dh-about-section-title, .dh-about-section-text {
+		text-align: center;
+	}
+	.dh-about-img-section {
+		display: flex;
+		order: 1;
+		margin-bottom: 1.5rem;
+	}
+	.dh-about-img-section img {
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	/* 6. Products Section */
+	
+	.dh-products-content {
+		margin-bottom: 1.5rem;
+	}
+	.dh-product-img img {
+		width: 70%;
+	}
+
+	/* 7. Contact CTA Section */
+
+	.dh-contact-cta-content {
+		margin-bottom: 2rem;
+	}
+
+	/* 8. About Us Page */
+
+	.header-banner {
+		padding: 1.25rem 0;
+		margin-top: 4.1875rem;
+	}
+	.dh-header-title {
+		font-size: 2.25rem;
+	}
+	.dh-about-us-banners, .dh-about-us-container {
+		margin-bottom: 2.25rem;
+	}
+	.dh-about-us-banners .carousel-item {
+		height: 15.3125rem;
+	}
+	.dh-about-us-text {
+		font-size: 1rem;
+	}
+	.dh-about-us-h3 {
+		font-size: 1.5rem;
+	}
+	.dh-about-us-text-mi-vi {
+		margin-top: 1.25rem;
+	}
+	.dh-about-us-h2 {
+		font-size: 1.75rem;
+	}
+
+	/* 9. Contact Us Page */
+	
+	.dh-contact-us-title {
+		font-size: 2rem;
+	margin-bottom: 1.25rem;
+	}
+	.dh-contact-us-text {
+		font-size: 1.25rem;
+	}
+	.form-input {
+		font-size: 1.25rem;
+	}
+
+}
+
+@media screen and (max-width: 575px) {
+
+	/* 0. General */
+
+	.dh-cta-btn {
+		font-size: 1.125rem;
+	}
+	/* 1. NavBar */
+
+	.navbar {
+		padding: .625rem 0;
+	}
+	.navbar-brand img {
+		width: 7.5rem;
+		height: 1.875rem;
+	}
+	.navbar-toggler, .dh-toggler-icon {
+		height: 1.5rem;
+		width: 1.5rem;
+	}
+	.navbar-toggler.collapsed .dh-toggler-icon::before, .navbar-toggler .dh-toggler-icon::before {
+		height: 1.5rem;
+		width: 1.5rem;
+		font-size: 1.5rem;
+	}
+
+	/* 2. Footer */
+
+	.dh-contact-info {
+		justify-content: start !important;
+	}
+	.dh-logo-container {
+		margin-bottom: 2rem;
+	}
+	.dh-logo {
+		width: 7.5rem;
+		height: 3.0625rem;
+	}
+	.dh-contact-links {
+		display: grid !important;
+		justify-content: start !important;
+		margin-bottom: 1rem;
+	}
+	.dh-contact {
+		margin-bottom: 1rem;
+	}
+	.dh-contact:last-of-type {
+		margin-bottom: 0;
+	}
+	.dh-location {
+		font-size: 1.125rem;
+	}
+	.dh-copyright-bar {
+		display: grid !important;
+	}
+	.dh-copyright-bar p {
+		text-align: center;
+    	margin: 0 0 .5rem;
+	}
+	.dh-copyright-bar p:last-of-type {
+    	margin: 0;
+	}
+	
+	/* 3. Slider-Banners */
+
+	.dh-slider-banners .carousel-item {
+		height: 50vh;
+	}
+	.dh-slider-banner-text {
+		font-size: 2.125rem;
+	}
+
+	/* 4. Services Section */
+
+	.dh-services-content {
+		margin-bottom: 1.5rem;
+	}
+	.dh-title {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+	.dh-title br {
+		display: none;
+	}
+	.dh-section-text {
+		font-size: 1rem;
+	}
+	.dh-service-module {
+		width: 75%;
+		margin: 0 auto 1.5rem;
+	}
+	.dh-service-title br {
+		display: inherit;
+	}
+
+	/* 5. About Section */
+
+	.dh-about-section-title .upcase {
+		font-size: 1.5625rem;
+	}
+	.dh-about-section-title .orange {
+		font-size: 1.5rem;
+	}
+	.dh-about-modules-section {
+		display: grid !important;
+		justify-content: center !important;
+	}
+	.dh-about-module {
+		margin: 0 auto 1rem;
+	}
+	.dh-about-module:last-of-type {
+		margin: 0 auto;
+	}
+
+	/* 6. Products Section */
+	
+	.dh-products-content {
+		margin-bottom: 1.5rem;
+	}
+	.dh-product-img img {
+		width: 75%;
+	}
+
+	/* 8. About Us Page */
+
+	.header-banner {
+		padding: 1rem 0;
+		margin-top: 3.125rem;
+	}
+	.dh-header-title {
+		font-size: 1.75rem;
+	}
+	.dh-about-us-banners, .dh-about-us-container {
+		margin-bottom: 1.75rem;
+	}
+	.dh-about-us-banners .carousel-item {
+		height: 12rem;
+	}
+
+	/* 9. Contact Us Page */
+	
+	.dh-contact-us-title {
+		font-size: 1.75rem;
+	}
+	.dh-contact-us-text {
+		font-size: 1.125rem;
+	}
+	.form-input {
+		font-size: 1.125rem;
+	}
+
+}

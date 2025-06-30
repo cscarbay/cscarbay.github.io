@@ -103,7 +103,7 @@ body {
 	background: rgba(11,13,13,.5);
 	transition: all 0.5s ease;
 }
-.navbar-primary-scrollchange {
+.navbar-primary-scrollchange, .navbar-secondary {
 	background: #0b0d0d;
 }
 .navbar-brand {
@@ -167,9 +167,6 @@ body {
 .navbar-toggler .cs-toggler-icon::before {
 	content: '\f00d';
 	color: #98b3b3;
-}
-.navbar-secondary {
-	background: #0b0d0d;
 }
 /********************************************************
 2. Footer
