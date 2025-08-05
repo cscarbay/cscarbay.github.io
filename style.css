@@ -37,9 +37,11 @@ html {
 	overflow-x: hidden;
 }
 body {
-    font-family: 'Neue Haas Grotesk Display Pro';
+	font-family: "Inter Tight";
+	font-optical-sizing: auto;
+	font-style: normal;
 	font-size: 1.125rem;
-	font-weight: 500;
+	font-weight: 400;
     line-height: 1.2;
 	font-kerning: auto;
 	color: #ffffff !important;
@@ -72,7 +74,7 @@ body {
 }
 .cs-cta-btn::after {
     content: "\f0a9";
-    font-family: "Font Awesome 6 Free";
+    font-family: "Font Awesome 7 Free";
     font-weight: 900;
 	margin-left: .5rem;
 }
@@ -111,7 +113,7 @@ body {
 	margin: 0;
 }
 .navbar-brand img {
-	height: 3rem;
+	width: 20rem;
 }
 .nav-container {
     width: 100%;
@@ -156,16 +158,16 @@ body {
 	display: inline-block;
 	height: 2.5rem;
 	width: 2.5rem;
-	font-family: 'Font Awesome 6 free';
+	font-family: 'Font Awesome 7 free';
 	font-weight: 900;
-	content: '\f7a4';
+	content: '\f142';
 	font-size: 2.5rem;
 	color: #ff2600;
 	background-image: none !important;
 	transition: all .3s ease;
 }
 .navbar-toggler .cs-toggler-icon::before {
-	content: '\f00d';
+	content: '\f141';
 	color: #98b3b3;
 }
 /********************************************************
@@ -185,12 +187,6 @@ body {
 .cs-contact:last-of-type {
 	margin-bottom: 0;
 }
-.cs-contact-icon {
-	width: 3rem;
-	color: #ff2600;
-	text-align: center;
-	margin-right: .75rem;
-}
 .cs-contact a {
 	font-weight: 600;
 	text-decoration: none;
@@ -200,6 +196,9 @@ body {
 .cs-contact a:hover, .cs-contact a:focus, .cs-contact a:active {
 	text-decoration: underline;
 	color: #98b3b3;
+}
+.cs-contact .phone {
+	font-weight: 900;
 }
 .cs-social-bar {
 	padding: 6rem 0;
@@ -222,7 +221,7 @@ body {
 }
 .cs-social-link {
 	font-size: 4rem;
-	margin-right: 2rem;
+	margin-right: 1rem;
     float: left;
 }
 .cs-social-link:last-child {
@@ -283,8 +282,8 @@ body {
 	content: '';
 	width: 100%;
 	height: 100%;
-	background-color: rgba(11,13,13,.25);
-	mix-blend-mode: color;
+	background-color: rgba(11,13,13,.33);
+	mix-blend-mode: multiply;
 }
 .cs-slider-banner-text {
 	position: relative;
@@ -304,13 +303,14 @@ body {
 .cs-about-text-container {
 	order: 1;
 }
-.cs-about-text p {
+.cs-about-text h1 {
     font-size: 3rem;
 	line-height: 1;
 	margin:  0 0 3rem;
 }
 .cs-about-text b {
 	font-weight: 600;
+	color: #98b3b3;
 }
 .cs-about-text span {
 	font-weight: 900;
@@ -326,25 +326,28 @@ body {
 .cs-milestone-title {
 	font-weight: 600;
 	font-size: 1.5rem;
-	color: #ff2600;
+	text-align: center;
+	color: #98b3b3;
 	margin: 0;
 }
 .cs-milestone-text {
 	font-weight: 900;
 	font-size: 6rem;
+	text-align: center;
 	color: #ffffff;
 	margin: 0;
 }
 .cs-customer-title {
 	font-weight: 600;
 	font-size: 2rem;
+	text-align: center;
 	color: #ff2600;
 	margin-bottom: 3rem;
 }
 .cs-logo-box {
 	margin-bottom: 1.5rem;
 }
-.cs-logo-box:nth-of-type(n+5) {
+.cs-logo-box:nth-of-type(n+9) {
 	margin-bottom: 0;
 }
 .cs-logo-thumb {
@@ -446,7 +449,7 @@ body {
 .accordion-button::after {
 	width: auto;
 	height: auto;
-	font-family: 'Font Awesome 6 free';
+	font-family: 'Font Awesome 7 free';
 	font-weight: 900;
 	font-size: 2rem;
 	content: '\f077';
@@ -543,7 +546,7 @@ body {
 	background: none;
 }
 .carousel-control-prev-icon::after, .carousel-control-next-icon::after {
-	font-family: 'Font Awesome 6 free';
+	font-family: 'Font Awesome 7 free';
 	font-weight: 900;
 	content: '\f053';
 	color: #ff2600;
@@ -955,13 +958,6 @@ body {
 .cs-contact {
 	font-size: 2.625rem;
 }
-.cs-contact-icon {
-	width: 2.625rem;
-	margin-right: .625rem;
-}
-.cs-tagline {
-	width: 20rem;
-}
 .cs-social-title {
 	font-size: 1.875rem;
 	margin-bottom: 1.375rem;
@@ -1112,11 +1108,7 @@ body {
 .cs-contact {
 	font-size: 2.125rem;
 }
-.cs-contact-icon {
-	width: 2.125rem;
-	margin-right: .5rem;
-}
-.cs-tagline {
+.navbar-brand img, .cs-tagline {
 	width: 16.25rem;
 }
 .cs-social-title {
@@ -1536,11 +1528,7 @@ body {
 .cs-contact {
 	font-size: clamp(1.3125rem, 0.2929rem + 5.098vw, 2.125rem);
 }
-.cs-contact-icon {
-	width: clamp(1.3125rem, 0.2929rem + 5.098vw, 2.125rem);
-	margin-right: clamp(0.25rem, -0.0637rem + 1.5686vw, 0.5rem);
-}
-.cs-tagline {
+.navbar-brand img, .cs-tagline {
 	width: clamp(10rem, 2.1569rem + 39.2157vw, 16.25rem);
 }
 .cs-social-title {
