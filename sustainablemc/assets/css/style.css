@@ -736,6 +736,9 @@ textarea {
 	.client-logo {
 		width: 2.25rem;
 	}
+	.banner-top {
+		height: 5rem;
+	}
 	.navbar-toggler.collapsed .smc-toggler-icon::before, .navbar-toggler .smc-toggler-icon::before {
 		font-size: 2rem;
 		height: 2rem;
