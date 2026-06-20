@@ -1,0 +1,104 @@
+/*
+Theme Name: CScarbay 2026
+Author: Carlos Scarbay
+Author URL: https://cscarbay.xyz
+Version: 6.0
+*/
+/********************************************************
+Documento CSS
+********************************************************/
+/********************************************************
+0. General
+1. Menu Bar
+2. Footer
+3. Slider-Banners
+4. About
+5. Projects
+6. Services
+7. Testimonials
+8. Budgets
+9. Page - Resume CV
+10. Page - Single
+11. Page - Only Text
+12. Page - Forms
+13. Contact Form 7
+14. Drag and Drop Multiple File Upload for Contact Form 7
+15. Country & Phone Field Contact Form 7
+16. Page - 404
+17. Page - link in Bio
+18. Page - Maintenance
+19. Responsive Media Queries
+********************************************************/
+/********************************************************
+0. General
+********************************************************/
+:root {
+    --color-fondo-header: rgba(11, 13, 13, 0.75);
+    --color-space-black: #0B0D0D;
+    --color-chilli-red: #FF2600;
+    --color-neutral-turquoise: #98B3B3;
+    --color-full-white: #FFFFFF;
+    --fuente-inter: 'Inter Tight', sans-serif;
+    --fuente-fa: 'Font Awesome 7 Free';
+    --fuente-base: system-ui, -apple-system, sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: var(--color-space-black);
+    font-family: var(--fuente-inter);
+    -webkit-font-smoothing: antialiased;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-size: 1rem;
+	font-weight: 400;
+    line-height: 1;
+	font-kerning: auto;
+	color: var(--color-full-white) !important;
+}
+::selection {
+	background: #ff2600 !important;
+	color: #ffffff !important;
+}
+/********************************************************
+1. Menu Bar
+********************************************************/
+.navbar {
+	padding: .75rem 0;
+	background: rgba(11,13,13,.75);
+}
+.navbar-brand {
+	padding: 0;
+	margin: 0;
+}
+.navbar-brand img {
+	width: 12rem;
+}
+.nav-container {
+    width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+.nav-item {
+	margin: 0 1.5rem 0 0;
+}
+.nav-item:last-child {
+	margin-right: 0;
+}
+.nav-link {
+	font-weight: 800;
+	font-size: 1.5rem;
+	color: var(--color-neutral-turquoise);
+	padding: 0 !important;
+	transition: all .3s ease;
+}
+.nav-link:hover, .nav-link:focus, .nav-link:active {
+	color: var(--color-chilli-red);
+}
